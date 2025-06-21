@@ -61,7 +61,7 @@ export const ContainerScroll = ({
             maximize yield across DePIN, Liquid staking, and Restaking
             protocols.
           </p>
-          <InfiniteMovingCards />
+          {/* <InfiniteMovingCards /> */}
         </div>
       </div>
     </div>
