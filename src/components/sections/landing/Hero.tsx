@@ -40,7 +40,7 @@ export default function Hero() {
             href="/download"
             className="py-[10px] px-[20px] rounded-[10px] bg-white hover:bg-white/80 text-black text-sm font-[400] cursor-pointer"
           >
-            Start the Scan
+            Sign in
           </a>
           <a
             href="https://www.linkedin.com/company/depins/"

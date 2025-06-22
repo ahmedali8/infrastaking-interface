@@ -8,9 +8,6 @@ import { GoogleOAuthProvider } from "@react-oauth/google";
 
 import {
   Admin,
-  Dashboard,
-  DePins,
-  Download,
   Landing,
 } from "@/components/pages";
 import Analytics from "./components/pages/Analytics";
@@ -22,11 +19,7 @@ function App() {
     <main className="min-h-screen  text-white">
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/analytics" element={<Analytics />} />
-
-        <Route path="/depins" element={<DePins />} />
-        <Route path="/download" element={<Download />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/contact" element={<Contact />} />
 

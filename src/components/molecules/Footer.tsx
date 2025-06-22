@@ -23,30 +23,13 @@ export default function Footer() {
             <div className="flex flex-col">
               <h3 className="text-black/50 font-light uppercase">Company</h3>
               <ul className="flex flex-col mt-3 md:mt-5 space-y-2">
+                
                 <a
                   className="text-black font-light hover:text-black/70 transition-colors"
-                  href=""
+                  href="/contact"
                 >
-                  Join the WaitList
+                  Contact Us
                 </a>
-                {/* <a
-                  className="text-black font-light hover:text-black/70 transition-colors"
-                  href=""
-                >
-                  News & Content
-                </a>
-                <a
-                  className="text-black font-light hover:text-black/70 transition-colors"
-                  href=""
-                >
-                  Careers
-                </a>
-                <a
-                  className="text-black font-light hover:text-black/70 transition-colors"
-                  href=""
-                >
-                  Contact
-                </a> */}
               </ul>
             </div>
             <div className="flex flex-col">
@@ -58,12 +41,12 @@ export default function Footer() {
                 >
                   Analytics
                 </a>
-                {/* <a
+                <a
                   className="text-black font-light hover:text-black/70 transition-colors"
                   href="/download"
                 >
-                  Start the Scan
-                </a> */}
+                  Sign in
+                </a>
                 {/* <a
                   className="text-black font-light hover:text-black/70 transition-colors"
                   href=""

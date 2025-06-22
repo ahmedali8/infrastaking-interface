@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+  const navigate = useNavigate();
   const [hidden, setHidden] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -39,6 +41,15 @@ export default function Navbar() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigate("/"); // go to landing page
+    setTimeout(() => {
+      const el = document.getElementById("faq");
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }, 100); // delay ensures DOM is ready
+  };
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -66,13 +77,13 @@ export default function Navbar() {
         </a>
 
         <div className="hidden md:flex items-center gap-4 bg-white text-black px-10 backdrop-blur-sm rounded-full p-2">
-          <a className="text-sm --font-inter font-light" href="#contact">
+          <a className="text-sm --font-inter font-light" href="/contact">
             Contact Us
           </a>
           {/* <a className="text-sm --font-inter font-light" href="#roadmap">
             Roadmap
           </a> */}
-          <a className="text-sm --font-inter font-light" href="#faq">
+          <a className="text-sm --font-inter font-light" href="/#faq" onClick={handleClick}>
             FAQ's
           </a>
           <a className="text-sm --font-inter font-light" href="/analytics">
@@ -109,15 +120,15 @@ export default function Navbar() {
           </svg>
         </button>
 
-        {/* <a
+        <a
           href="/download"
           className="hidden md:flex items-center gap-2 bg-white text-black px-5 backdrop-blur-sm rounded-full py-1"
         >
           <span className="text-sm --font-inter font-light">
-            Start The Scan
+            Sign in
           </span>
           <img src="/7994392.gif" alt="" className="w-[30px] h-[30px]" />
-        </a> */}
+        </a>
       </div>
 
       <div
@@ -137,8 +148,10 @@ export default function Navbar() {
               <div className="flex items-center gap-6 w-full mb-4">
                 <a
                   className="text-sm --font-inter font-light text-white hover:text-blue-200 transition-colors"
-                  href="#contact"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  href="/contact"
+                  onClick={() => {
+                  setIsMobileMenuOpen(false)}
+                  }
                 >
                   Contact Us
                 </a>
@@ -151,8 +164,11 @@ export default function Navbar() {
                 </a> */}
                 <a
                   className="text-sm --font-inter font-light text-white hover:text-blue-200 transition-colors"
-                  href="#faq"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  href="/#faq"
+                  onClick={(e) => { 
+                    handleClick(e, "faq");
+                    setIsMobileMenuOpen(false)}
+                  }
                 >
                   FAQ's
                 </a>
@@ -176,13 +192,13 @@ export default function Navbar() {
                   </svg>
                 </button>
               </div>
-              {/* <a
+              <a
                 href="/download"
                 className="flex items-center gap-2 hover:text-blue-200 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 <span className="text-sm --font-inter font-light text-white">
-                  Start The Scan
+                  Sign in
                 </span>
                 <svg
                   width="18"
@@ -214,7 +230,7 @@ export default function Navbar() {
                     />
                   </g>
                 </svg>
-              </a> */}
+              </a>
             </div>
           </div>
         </div>

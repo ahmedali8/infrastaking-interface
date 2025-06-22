@@ -57,7 +57,8 @@ import {
     };
   
     return (
-      <div className="bg-[#5755557d] text-white px-4 py-12 sm:px-8 rounded-2xl max-w-2xl mx-auto mt-24">
+    <div className="px-4 sm:px-0">
+      <div className="bg-[#5755557d] text-white px-4 py-12 sm:px-8 rounded-2xl max-w-2xl mx-auto mt-32">
         <h2 className="text-3xl font-bold mb-4">Join the Waitlist / Contact Us</h2>
         <p className="mb-6 text-gray-300">We’ll get back to you or notify you when we launch!</p>
   
@@ -124,6 +125,7 @@ import {
             )}
           </form>
         </Form>
+      </div>
       </div>
     );
   }
