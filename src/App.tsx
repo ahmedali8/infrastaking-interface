@@ -14,6 +14,7 @@ import {
   Landing,
 } from "@/components/pages";
 import Analytics from "./components/pages/Analytics";
+import Contact from "./components/pages/Contact";
 
 function App() {
 
@@ -27,6 +28,8 @@ function App() {
         <Route path="/depins" element={<DePins />} />
         <Route path="/download" element={<Download />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/contact" element={<Contact />} />
+
       </Routes>
     </main>
   );

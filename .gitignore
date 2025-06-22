@@ -28,3 +28,5 @@ yarn.lock
 # Env
 .env.development
 .vercel
+
+.env
