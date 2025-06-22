@@ -121,7 +121,8 @@ export default function Navbar() {
         </button>
 
         <a
-          href="/download"
+          href="https://smart-wallet-stellar.surge.sh/"
+          target="_blank"
           className="hidden md:flex items-center gap-2 bg-white text-black px-5 backdrop-blur-sm rounded-full py-1"
         >
           <span className="text-sm --font-inter font-light">
@@ -193,7 +194,8 @@ export default function Navbar() {
                 </button>
               </div>
               <a
-                href="/download"
+                href="https://smart-wallet-stellar.surge.sh/"
+                target="_blank"
                 className="flex items-center gap-2 hover:text-blue-200 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >

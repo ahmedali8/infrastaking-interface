@@ -43,7 +43,8 @@ export default function Footer() {
                 </a>
                 <a
                   className="text-black font-light hover:text-black/70 transition-colors"
-                  href="/download"
+                  href="https://smart-wallet-stellar.surge.sh/"
+                  target="_blank"
                 >
                   Sign in
                 </a>
