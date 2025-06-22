@@ -109,7 +109,7 @@ export default function Navbar() {
           </svg>
         </button>
 
-        <a
+        {/* <a
           href="/download"
           className="hidden md:flex items-center gap-2 bg-white text-black px-5 backdrop-blur-sm rounded-full py-1"
         >
@@ -117,7 +117,7 @@ export default function Navbar() {
             Start The Scan
           </span>
           <img src="/7994392.gif" alt="" className="w-[30px] h-[30px]" />
-        </a>
+        </a> */}
       </div>
 
       <div
@@ -176,7 +176,7 @@ export default function Navbar() {
                   </svg>
                 </button>
               </div>
-              <a
+              {/* <a
                 href="/download"
                 className="flex items-center gap-2 hover:text-blue-200 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -214,7 +214,7 @@ export default function Navbar() {
                     />
                   </g>
                 </svg>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

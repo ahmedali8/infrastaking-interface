@@ -35,9 +35,9 @@ const features: Feature[] = [
     bgColor: "#00FFAA33",
   },
   {
-    title: "Meta-Vault Program (on Solana)",
+    title: "Meta-Vault Program (on Stellar)",
     description:
-      "Mints receipt tokens (e.g. stGRASS, mRENDER) and executes staking logic.",
+    "Issues vault tokens (e.g. vGRASS, vRENDER) and manages staking logic via Soroban smart contracts.",
     icon: Database,
     iconColor: "#FFD166",
     bgColor: "#FFD16633",

@@ -40,7 +40,7 @@ export default function Ecosystem() {
       id="ecosystem"
       className="py-20 px-4 md:px-8 container mx-auto bg-[#0B0F1C]">
       <SectionHeading
-        title="Plugged Into the Solana Ecosystem"
+        title="Plugged Into the Stellar Ecosystem"
         subtitle="We integrate directly with leading infrastructure networks ready for yield, out of the box."
         centered
       />

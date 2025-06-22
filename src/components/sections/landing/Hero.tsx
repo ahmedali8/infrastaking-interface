@@ -29,7 +29,7 @@ export default function Hero() {
       {/* <div className="absolute inset-0 bg-black/50 backdrop-blur-md" /> */}
       {/* <div className="flex flex-col relative z-10 md:px-20 px-4 text-center gap-2 pb-20">
         <p className="max-w-[318px] leading-[120%] text-center --font-intel font-[100] text-2xl ">
-          An onchain compliance layer for DePIN InfraStaking{" "}
+          An on-ledger compliance layer for DePIN InfraStaking on Stellar{" "}
         </p>
         <h1 className="md:text-[40px] text-[48px] md:max-w-[580px] max-w-[350px] --font-jetbrains-mono">
           Infra Staking

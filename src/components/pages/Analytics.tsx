@@ -228,7 +228,7 @@ export default function Analytics() {
             InfraStaking
           </h1>
           <p className="text-zinc-400 mt-2 text-sm">
-            An onchain compliance layer for DePIN InfraStaking
+            An on-ledger compliance layer for DePIN InfraStaking on Stellar
           </p>
         </div>
       </div>

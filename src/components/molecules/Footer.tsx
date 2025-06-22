@@ -58,12 +58,12 @@ export default function Footer() {
                 >
                   Analytics
                 </a>
-                <a
+                {/* <a
                   className="text-black font-light hover:text-black/70 transition-colors"
                   href="/download"
                 >
                   Start the Scan
-                </a>
+                </a> */}
                 {/* <a
                   className="text-black font-light hover:text-black/70 transition-colors"
                   href=""
